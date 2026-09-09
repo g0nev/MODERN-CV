@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Vladyslav Zvezdaiev - Frontend Architect &amp; AI Engineer</title>
+<style>
+  @page { size: Letter; margin: 0; }
+
+  :root {
+    --pink: #F20B68;
+    --ink: #000;
+    --rule: #B8B8B8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7.5pt;
+    line-height: 10.5pt;
+    color: var(--ink);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    position: relative;
+    width: 612pt;
+    height: 792pt;
+    padding: 26pt 42pt 0 42pt;
+    overflow: hidden;
+  }
+
+  .page + .page { page-break-before: always; }
+
+  /* ---------- header ---------- */
+
+  .name {
+    text-align: center;
+    font-size: 16pt;
+    line-height: 18.4pt;
+    font-weight: bold;
+    color: var(--pink);
+  }
+
+  .role {
+    text-align: center;
+    font-size: 11pt;
+    line-height: 14pt;
+    font-weight: bold;
+    margin-top: 1pt;
+  }
+
+  .tagline { text-align: center; margin-top: 3pt; }
+
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8pt;
+  }
+
+  /* ---------- sections ---------- */
+
+  h2 {
+    font-size: 8pt;
+    line-height: 9.2pt;
+    font-weight: bold;
+    color: var(--pink);
+    text-transform: uppercase;
+    margin-top: 10pt;
+    padding-bottom: 2.5pt;
+    border-bottom: 0.6pt solid var(--rule);
+  }
+
+  h2.tight { margin-top: 10pt; }
+
+  .block { margin-top: 7pt; }
+  .block p + p { margin-top: 6pt; }
+
+  /* ---------- experience ---------- */
+
+  .job { margin-top: 7pt; }
+
+  .job-top,
+  .job-sub {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .job-top { font-weight: bold; }
+
+  ul { list-style: none; margin-top: 1pt; }
+
+  li {
+    position: relative;
+    padding-left: 9pt;
+  }
+
+  li::before {
+    content: "\2022";
+    position: absolute;
+    left: 1pt;
+  }
+
+  /* ---------- two-column grids ---------- */
+
+  .cols {
+    display: flex;
+    gap: 24pt;
+    margin-top: 7pt;
+  }
+
+  .cols > div { flex: 1; }
+
+  .card { margin-bottom: 6pt; }
+  .card .kicker { font-weight: bold; text-transform: uppercase; }
+  .card .title { font-weight: bold; }
+
+  /* ---------- skills ---------- */
+
+  .skills { margin-top: 6pt; }
+  .skill-group { margin-top: 4pt; }
+  .skill-group:first-child { margin-top: 4pt; }
+  .skill-label { font-weight: bold; text-transform: uppercase; }
+  .skill-items span { margin-right: 12pt; white-space: nowrap; }
+
+  /* ---------- delivery ---------- */
+
+  .delivery { margin-top: 7pt; }
+  .delivery p { margin-bottom: 4pt; }
+  .delivery b { font-weight: bold; }
+
+  /* ---------- closing ---------- */
+
+  .closing { margin-top: 8pt; text-align: center; }
+  .closing hr { border: 0; border-top: 0.6pt solid var(--rule); margin-bottom: 10pt; }
+  .closing .big { font-size: 13pt; line-height: 16pt; font-weight: bold; }
+  .closing p { margin-top: 4pt; }
+  .closing .mail { font-weight: bold; margin-top: 8pt; }
+
+  /* ---------- footer ---------- */
+
+  .foot {
+    position: absolute;
+    left: 42pt;
+    right: 42pt;
+    bottom: 26pt;
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.6pt solid var(--rule);
+    padding-top: 5pt;
+  }
+
+  .foot .links span { margin-left: 10pt; }
+  .foot .num { color: var(--pink); font-weight: bold; margin-left: 10pt; }
+  a { color: inherit; text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="name">Vladyslav Zvezdaiev</div>
+  <div class="role">Frontend Architect &amp; AI Engineer</div>
+  <div class="tagline">Frontend Architect, AI Engineer and Lead Prompter building high-performance digital products from concept to deployment.</div>
+
+  <div class="contact">
+    <span><a href="mailto:vladzvezdaev@gmail.com">vladzvezdaev@gmail.com</a></span>
+    <span>Imatra, Finland</span>
+    <span>+380 67 733 59 33</span>
+    <span><a href="https://www.linkedin.com/in/gonev/">LinkedIn</a></span>
+    <span><a href="https://x.com/vlad_lafys">X</a> / <a href="https://t.me/g1g230">Telegram</a></span>
+  </div>
+<h2>Profile</h2>
+  <div class="block">
+    <p>I combine frontend architecture with advanced AI-assisted development. I build custom Claude Code skills, agent teams and reusable workflows for code generation, debugging, refactoring and production-oriented delivery. I also create fast, conversion-focused products and consistently target 99+ Lighthouse scores across Performance, Accessibility, Best Practices and SEO.</p>
+    <p>Alongside frontend, I ship production backend on PHP and Laravel: payment platforms, admin panels, financial ledgers and third-party payment integrations, including deployment and server operations.</p>
+    <p><b>20+ websites and products delivered.</b> Commercial, SaaS and AI-powered products. <b>Languages:</b> EN / UA / RU.</p>
+  </div>
+<h2>Work Experience</h2>
+
+  <div class="job">
+    <div class="job-top"><span><a href="https://qclay.design/">QClay</a></span>
+<span>Apr 2026 - Present</span></div>
+    <div class="job-sub"><span>Lead Prompter, Frontend Developer &amp; AI Engineer</span>
+<span>Remote</span></div>
+    <ul>
+      <li>Build and ship premium websites, interfaces and interactive effects with React, Next.js, TypeScript, Tailwind, SCSS, WebGL and Three.js across 20+ projects.</li>
+      <li>Create high-quality prompts for Lovable, Claude Code and other AI builders, including reusable prompts for complete websites and luxury visual effects.</li>
+      <li>Develop AI-assisted workflows, integrate APIs, build Shopify themes and optimize shipped experiences toward 99+ Lighthouse scores.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top"><span><a href="https://lafys.com/">Lafys</a></span>
+<span>Apr 2026 - Present</span></div>
+    <div class="job-sub"><span>Lead Prompter, Frontend Developer &amp; AI Engineer</span>
+<span>Remote</span></div>
+    <ul>
+      <li>Contribute to the full product lifecycle of Lafys - a curated library of design-grade prompts for Lovable, Claude and v0.</li>
+      <li>Created approximately half of the products presented on the platform and developed tested prompts for complete AI-built websites.</li>
+      <li>Develop and maintain the product website with Next.js, Sanity.io and TypeScript, while handling frontend optimization and debugging.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top"><span>Fintech &amp; iGaming Platforms</span>
+<span>Jan 2026 - Present</span></div>
+    <div class="job-sub"><span>Full-stack Developer (contract, PHP / Laravel)</span>
+<span>Remote</span></div>
+    <ul>
+      <li>Contribute to a live P2P payment platform and two connected products, working directly on production systems that process real money.</li>
+      <li>212 commits across the payment platform: order routing, financial ledger, dispute handling, crypto payment integration and four operator panels.</li>
+      <li>Own production operations: server migration, deployment, queue workers, scheduled jobs and post-release verification.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top"><span>Jiraffy Marketplace</span>
+<span>Nov 2025 - Apr 2026</span></div>
+    <div class="job-sub"><span>Frontend Developer</span>
+<span>Remote</span></div>
+    <ul>
+      <li>Built product listings, filters, cart and checkout flows with React, Tailwind CSS and SCSS.</li>
+      <li>Implemented payment acquiring logic: held customer payments, released funds after admin approval and split payouts between seller and platform commission.</li>
+      <li>Improved Lighthouse Performance from ~60 to 90+ and refactored 10+ components to reduce re-renders and layout shifts.</li>
+    </ul>
+  </div>
+<h2>AI Projects</h2>
+  <div class="cols">
+    <div>
+      <div class="card">
+        <div class="kicker">Independent</div>
+        <div class="title">Business AI Agent &amp; Website Assistant</div>
+        <div>Configurable AI agents for websites using RAG, embeddings, vector databases, OpenRouter, Claude API and OpenAI API.</div>
+      </div>
+      <div class="card">
+        <div class="kicker">Independent</div>
+        <div class="title">Configurable 18+ Conversational AI</div>
+        <div>Deeply configurable conversational chatbot with custom behavior instructions and user experience controls.</div>
+      </div>
+    </div>
+    <div>
+      <div class="card">
+        <div class="kicker">Independent</div>
+        <div class="title">Graph-Based AI System</div>
+        <div>AI product with graph-based logic for structured reasoning, customizable workflows and deep behavioral configuration.</div>
+      </div>
+      <div class="card">
+        <div class="kicker">Independent AI Products</div>
+        <div class="title">AuraSynk, Velluma.ai &amp; GONEV</div>
+        <div>AI products and Telegram bots with custom assistants, business instructions and AI-driven user journeys.</div>
+      </div>
+    </div>
+  </div>
+<h2 class="tight">AI Engineering Focus</h2>
+  <div class="block">
+    <p>I design the complete path from an idea or visual reference to a production-ready AI product: prompt architecture, model provider selection, retrieval and knowledge flows, agent instructions, website integration, Telegram bots, custom assistants, frontend delivery and iterative improvement. I also package complete websites, components and visual interactions into high-quality prompts for AI builders.</p>
+  </div>
+<h2 class="tight">Selected Delivery</h2>
+  <div class="delivery">
+    <p><b>Portfolio Platform &amp; Real-time Chat.</b> Deployed an 8-page Next.js portfolio with a custom Sanity page builder, FSD architecture, Framer Motion, CI/CD on Vercel and Lighthouse 100 across Performance, Accessibility, Best Practices and SEO. Also built a full React school chat with authentication, rooms, threads, messages, online status, native WebSocket API and optimized re-renders.</p>
+  </div>
+  <div class="foot">
+    <span>Vladyslav Zvezdaiev</span>
+    <span class="links">
+      <span><a href="https://qclay.design/">QClay</a></span>
+      <span><a href="https://lafys.com/">Lafys</a></span>
+      <span><a href="https://github.com/g0nev">GitHub</a></span>
+      <span><a href="https://www.linkedin.com/in/gonev/">LinkedIn</a></span>
+      <span><a href="https://x.com/vlad_lafys">X</a></span>
+      <span><a href="https://t.me/g1g230">Telegram</a></span>
+      <span class="num">01</span>
+    </span>
+  </div>
+</div>
+
+<div class="page">
+<h2 class="tight">Payments &amp; Platform Engineering</h2>
+  <div class="delivery">
+    <p><b>P2P Payment Platform (Laravel 13, Filament 5, PHP 8.3).</b> Four operator panels - admin, merchant, trader and support - over a double-entry ledger stored in minor units. Built order routing with deposit, limit, blacklist and cooldown filters, dispute and correction flows, commission tiers, multi-currency settlement and a merchant REST API with idempotent order and payout endpoints. Went live and processes real payments.</p>
+    <p><b>Crypto payment processing.</b> Integrated a crypto payment provider for USDT deposits and mass payouts: HMAC-signed IPN webhooks with signature verification, idempotent crediting under row locks, per-trader deposit addresses, TOTP-verified payout batches and provider IP whitelisting. Diagnosed and closed a class of silent failures where a rejected webhook still returned success and the provider never retried.</p>
+    <p><b>Production operations.</b> Migrated the platform to a dedicated server and verified it end to end: nginx, PHP-FPM, MySQL, Redis, supervisor queue workers, scheduled jobs, SSL and DNS. Wrote a one-command health check covering the parts that fail silently - workers, cron, storage, encryption keys and data integrity - and recovered the system after a database loss incident.</p>
+    <p><b>Security and audit work.</b> Two-factor authentication with TOTP and recovery codes, audit logging with before/after values, IP allow-lists, rate limiting on search and record access, PII masking and explicit authorization on state-changing admin actions.</p>
+    <p><b>Legacy PHP casino platform.</b> Fixed money-affecting defects in a live system: duplicate welcome bonuses on a single deposit, exchange rates frozen for four days, site rate not reaching game providers and duplicate free-spin wins on one provider callback. Closed a publicly exposed <b>.git</b> directory and separated database accounts by consumer.</p>
+    <p><b>Affiliate platform (Laravel, Filament).</b> Revenue-share accounting split across two repositories. Found and fixed a missing period filter that silently overwrote weekly partner earnings, and verified the correction against independently recomputed figures.</p>
+  </div>
+<h2>Technical Skills</h2>
+  <div class="skills">
+    <div class="skill-group">
+      <div class="skill-label">Frontend</div>
+      <div class="skill-items"><span>React</span>
+<span>Next.js</span>
+<span>TypeScript</span>
+<span>JavaScript</span>
+<span>HTML5</span>
+<span>CSS3</span>
+<span>SCSS</span>
+<span>Tailwind CSS</span>
+<span>Framer Motion</span>
+<span>Responsive Design</span></div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-label">Backend</div>
+      <div class="skill-items"><span>PHP 8.3</span>
+<span>Laravel 13</span>
+<span>Filament 5</span>
+<span>Livewire</span>
+<span>Blade</span>
+<span>Eloquent ORM</span>
+<span>Queues &amp; Workers</span>
+<span>Task Scheduling</span>
+<span>REST APIs</span></div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-label">Payments &amp; Fintech</div>
+      <div class="skill-items"><span>Double-entry Ledger</span>
+<span>Crypto Payments (USDT)</span>
+<span>Webhooks / IPN</span>
+<span>HMAC Signatures</span>
+<span>Idempotency</span>
+<span>Payment Routing</span>
+<span>Shopify</span>
+<span>Lemon Squeezy</span>
+<span>E-commerce Flows</span></div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-label">Data &amp; Infrastructure</div>
+      <div class="skill-items"><span>MySQL</span>
+<span>Redis</span>
+<span>Supabase</span>
+<span>SQL</span>
+<span>Sanity.io</span>
+<span>GROQ</span>
+<span>Linux / Ubuntu</span>
+<span>Nginx</span>
+<span>Supervisor</span>
+<span>Cron</span>
+<span>SSL / Certbot</span></div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-label">Security</div>
+      <div class="skill-items"><span>2FA / TOTP</span>
+<span>Audit Logging</span>
+<span>Access Policies</span>
+<span>Rate Limiting</span>
+<span>PII Masking</span>
+<span>Secret Rotation</span></div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-label">Creative Dev</div>
+      <div class="skill-items"><span>WebGL</span>
+<span>Three.js</span>
+<span>Interactive Effects</span>
+<span>Motion Design</span>
+<span>Figma</span>
+<span>Pixel-accurate Implementation</span></div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-label">AI Engineering</div>
+      <div class="skill-items"><span>OpenRouter</span>
+<span>Claude API</span>
+<span>OpenAI API</span>
+<span>Telegram Bot API</span>
+<span>RAG</span>
+<span>Embeddings</span>
+<span>Vector DBs</span>
+<span>AI Agents</span>
+<span>Prompt Engineering</span></div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-label">AI Development</div>
+      <div class="skill-items"><span>Claude Code - Advanced</span>
+<span>Custom Skills</span>
+<span>Agent Teams</span>
+<span>Multi-agent Workflows</span>
+<span>Prompt Architecture</span>
+<span>AI-assisted Debugging</span>
+<span>Refactoring</span>
+<span>Code Generation</span></div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-label">AI Training</div>
+      <div class="skill-items"><span>Unsloth.ai</span>
+<span>JAX</span>
+<span>Keras</span>
+<span>Kaktus</span>
+<span>Fine-tuning</span>
+<span>Model Adaptation</span></div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-label">Tools</div>
+      <div class="skill-items"><span>Claude Code</span>
+<span>Lovable</span>
+<span><a href="https://github.com/g0nev">GitHub</a></span>
+<span>Git</span>
+<span>Vercel</span>
+<span>VS Code</span>
+<span>Cursor</span>
+<span>CI/CD</span></div>
+    </div>
+  </div>
+<h2>Education</h2>
+  <div class="job">
+    <div class="job-top"><span>Frontend Development Program</span>
+<span>Sep 2025 - Present</span></div>
+    <div style="margin-top:6pt">Advanced practice in React, Next.js, TypeScript, responsive UI, accessibility, architecture, API integration, Sanity CMS, animation and collaborative Git workflows.</div>
+  </div>
+<h2>Languages</h2>
+  <div class="cols">
+    <div>
+      <div class="card"><div class="kicker">Ukrainian</div><div>NATIVE</div></div>
+    </div>
+    <div>
+      <div class="card"><div class="kicker">Russian</div><div>NATIVE</div></div>
+    </div>
+    <div>
+      <div class="card"><div class="kicker">English</div><div>B1</div></div>
+    </div>
+  </div>
+  <div class="closing">
+    <hr>
+    <div class="big">Let's build something</div>
+    <p>Open to projects, collaborations and full-time opportunities.</p>
+    <p>Selected repositories and client projects are private and available for discussion during interviews.</p>
+    <div class="mail"><a href="mailto:vladzvezdaev@gmail.com">vladzvezdaev@gmail.com</a></div>
+  </div>
+  <div class="foot">
+    <span>&copy; 2026 Vladyslav Zvezdaiev</span>
+    <span class="links">
+      <span><a href="https://qclay.design/">QClay</a></span>
+      <span><a href="https://lafys.com/">Lafys</a></span>
+      <span><a href="https://github.com/g0nev">GitHub</a></span>
+      <span><a href="https://www.linkedin.com/in/gonev/">LinkedIn</a></span>
+      <span><a href="https://x.com/vlad_lafys">X</a></span>
+      <span><a href="https://t.me/g1g230">Telegram</a></span>
+      <span class="num">02</span>
+    </span>
+  </div>
+</div>
+
+</body>
+</html>
