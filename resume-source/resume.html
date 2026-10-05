@@ -73,6 +73,9 @@
   }
 
   h2.tight { margin-top: 10pt; }
+  .page + .page h2 { margin-top: 7pt; }
+  .page + .page h2.tight { margin-top: 10pt; }
+  .page + .page .card { margin-bottom: 2pt; }
 
   .block { margin-top: 7pt; }
   .block p + p { margin-top: 6pt; }
@@ -119,7 +122,7 @@
   /* ---------- skills ---------- */
 
   .skills { margin-top: 6pt; }
-  .skill-group { margin-top: 4pt; }
+  .skill-group { margin-top: 2pt; }
   .skill-group:first-child { margin-top: 4pt; }
   .skill-label { font-weight: bold; text-transform: uppercase; }
   .skill-items span { margin-right: 12pt; white-space: nowrap; }
@@ -127,16 +130,16 @@
   /* ---------- delivery ---------- */
 
   .delivery { margin-top: 7pt; }
-  .delivery p { margin-bottom: 4pt; }
+  .delivery p { margin-bottom: 3pt; }
   .delivery b { font-weight: bold; }
 
   /* ---------- closing ---------- */
 
-  .closing { margin-top: 8pt; text-align: center; }
-  .closing hr { border: 0; border-top: 0.6pt solid var(--rule); margin-bottom: 10pt; }
+  .closing { margin-top: 5pt; text-align: center; }
+  .closing hr { border: 0; border-top: 0.6pt solid var(--rule); margin-bottom: 6pt; }
   .closing .big { font-size: 13pt; line-height: 16pt; font-weight: bold; }
-  .closing p { margin-top: 4pt; }
-  .closing .mail { font-weight: bold; margin-top: 8pt; }
+  .closing p { margin-top: 2pt; }
+  .closing .mail { font-weight: bold; margin-top: 4pt; }
 
   /* ---------- footer ---------- */
 
@@ -278,6 +281,7 @@
   <div class="delivery">
     <p><b>P2P Payment Platform (Laravel 13, Filament 5, PHP 8.3).</b> Four operator panels - admin, merchant, trader and support - over a double-entry ledger stored in minor units. Built order routing with deposit, limit, blacklist and cooldown filters, dispute and correction flows, commission tiers, multi-currency settlement and a merchant REST API with idempotent order and payout endpoints. Went live and processes real payments.</p>
     <p><b>Crypto payment processing.</b> Integrated a crypto payment provider for USDT deposits and mass payouts: HMAC-signed IPN webhooks with signature verification, idempotent crediting under row locks, per-trader deposit addresses, TOTP-verified payout batches and provider IP whitelisting. Diagnosed and closed a class of silent failures where a rejected webhook still returned success and the provider never retried.</p>
+    <p><b>Android app for traders (Kotlin, Jetpack Compose).</b> Captures bank push notifications on the trader's phone and sends them to the platform to confirm payments automatically. Offline outbox with retries, encrypted QR device binding, in-app updates, crash reporting and 350+ unit tests.</p>
     <p><b>Production operations.</b> Migrated the platform to a dedicated server and verified it end to end: nginx, PHP-FPM, MySQL, Redis, supervisor queue workers, scheduled jobs, SSL and DNS. Wrote a one-command health check covering the parts that fail silently - workers, cron, storage, encryption keys and data integrity - and recovered the system after a database loss incident.</p>
     <p><b>Security and audit work.</b> Two-factor authentication with TOTP and recovery codes, audit logging with before/after values, IP allow-lists, rate limiting on search and record access, PII masking and explicit authorization on state-changing admin actions.</p>
     <p><b>Legacy PHP casino platform.</b> Fixed money-affecting defects in a live system: duplicate welcome bonuses on a single deposit, exchange rates frozen for four days, site rate not reaching game providers and duplicate free-spin wins on one provider callback. Closed a publicly exposed <b>.git</b> directory and separated database accounts by consumer.</p>
@@ -309,6 +313,17 @@
 <span>Queues &amp; Workers</span>
 <span>Task Scheduling</span>
 <span>REST APIs</span></div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-label">Mobile</div>
+      <div class="skill-items"><span>Kotlin</span>
+<span>Android SDK</span>
+<span>Jetpack Compose</span>
+<span>Coroutines</span>
+<span>Room</span>
+<span>WorkManager</span>
+<span>OkHttp</span>
+<span>Notification Listener</span></div>
     </div>
     <div class="skill-group">
       <div class="skill-label">Payments &amp; Fintech</div>
@@ -403,7 +418,7 @@
   <div class="job">
     <div class="job-top"><span>Frontend Development Program</span>
 <span>Sep 2025 - Present</span></div>
-    <div style="margin-top:6pt">Advanced practice in React, Next.js, TypeScript, responsive UI, accessibility, architecture, API integration, Sanity CMS, animation and collaborative Git workflows.</div>
+    <div style="margin-top:3pt">Advanced practice in React, Next.js, TypeScript, responsive UI, accessibility, architecture, API integration, Sanity CMS, animation and collaborative Git workflows.</div>
   </div>
 <h2>Languages</h2>
   <div class="cols">
